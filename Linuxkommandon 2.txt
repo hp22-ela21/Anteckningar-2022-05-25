@@ -1,0 +1,32 @@
+OBS! Tecknet $ används enbart för att indikera att en rad utgör ett Linuxkommando.
+Skriv inte detta själva i Linuxterminalen (ett sådant tecken bör redan synas automatiskt).
+
+Radering av en fil kan göras med kommandot rm (remove).
+Som exempel, en fil döpt main.c kan raderas med följande kommando:
+$ sudo rm main.c
+
+Radering av en tom katalog kan göras med kommandot rmdir (remove directory).
+
+Som exempel, en katalog döpt dir1 kan raderas med följande kommando
+$ rmdir dir1
+
+Dessvärre fungerar ovanstående kommando enbart på tomma kataloger. Vanligtvis är
+kataloger inte tomma, så ett annat kommando måste användas!
+
+Radering av en katalog innehållande filer kan göras med kommandot rm -r.
+Detta kommando raderar även samtliga filer i katalogen. 
+Som exempel, en katalog döpt dir1 samt dess innehåll kan raderas med följande kommando:
+$ sudo rm -r dir1
+
+För att flytta innehåll från en fil till en annan, där den gamla filen raderas, 
+kan kommandot mv (move) användas. Som exempel, för att flytta innehåll från en fil döpt 
+data1.txt till en fil döpt data2.txt kan följande kommando användas:
+$ mv data1.txt data2.txt
+
+Om filerna som används ligger i samma mapp motsvarar detta att en fil döps om i Windows.
+Filerna behöver dock inte ligga i samma mapp.
+
+För att kopiera innehåll från en fil till en annan, där den gamla filen bibehålls, 
+kan kommandot (copy) användas. Som exempel, för att flytta innehåll från en fil döpt 
+data1.txt till en fil döpt data2.txt kan följande kommando användas:
+$ cp data1.txt data2.txt
