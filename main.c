@@ -3,16 +3,16 @@
 #include <stdlib.h>
 
 /*************************************************************************
-* Returnerar ett slumptal mellan 0 - 100. För att erhålla ett slumptal
-* anropas funktionen rand från biblioteket stdlib.
+* Returnerar ett slumptal mellan 0 - 100. FÃ¶r att erhÃ¥lla ett slumptal
+* anropas funktionen rand frÃ¥n biblioteket stdlib.
 *************************************************************************/
 static inline double get_random(void) { return (double)(rand() % 101); }
 
 /*************************************************************************
 * Fyller en array till bredden med randomiserade flyttal. 
-* För iterationen används en dubbelpekare döpt i som börjar på första
-* index (i = data) och slutar där arrayen tar slut (data + size).
-* Ett flyttal tilldelas till adressen som i pekar på via en derefens *i.
+* FÃ¶r iterationen anvÃ¤nds en double-pekare dÃ¶pt i som bÃ¶rjar pÃ¥ fÃ¶rsta
+* index (i = data) och slutar dÃ¤r arrayen tar slut (data + size).
+* Ett flyttal tilldelas till adressen som i pekar pÃ¥ via en derefens *i.
 *************************************************************************/
 static void assign(double* data, const size_t size)
 {
@@ -22,9 +22,9 @@ static void assign(double* data, const size_t size)
 }
 
 /*************************************************************************
-* Skapa en funktion döpt print för att skriva ut arrayens innehåll.
+* Skapa en funktion dÃ¶pt print fÃ¶r att skriva ut arrayens innehÃ¥ll.
 * Passera en pekare till arrayen, arrayens storlek samt vilket typ av
-* stream / filpekare vi skall använda (konsol eller fil).
+* stream / filpekare vi skall anvÃ¤nda (konsol eller fil).
 *************************************************************************/
 static void print(const double* data, const size_t size, FILE* stream)
 {
@@ -37,12 +37,12 @@ static void print(const double* data, const size_t size, FILE* stream)
 }
 
 /*************************************************************************
-* Deklarerar en array döpt data som rymmer tio flyttal. Fyller sedan
+* Deklarerar en array dÃ¶pt data som rymmer tio flyttal. Fyller sedan
 * denna array till bredden med tio randomiserade tal. Skriver sedan ut
-* dessa tal i konsolen. Bifogar sedan innehållet till en textfil 
-* döpt data.txt. Stänger sedan filen, vilket dock hade genomförts
-* automatiskt när programmet avslutats. Det är dock bra att ha som
-* vana att alltid stänga filerna manuellt.
+* dessa tal i konsolen. Bifogar sedan innehÃ¥llet till en textfil 
+* dÃ¶pt data.txt. StÃ¤nger sedan filen, vilket dock hade genomfÃ¶rts
+* automatiskt nÃ¤r programmet avslutats. Det Ã¤r dock bra att ha som
+* vana att alltid stÃ¤nga filerna manuellt.
 *************************************************************************/
 int main(void)
 {
